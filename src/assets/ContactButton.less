@@ -1,0 +1,51 @@
+@import url("./preset.less");
+
+.button-contact-container {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid @border-main;
+  background-color: @bg-transparency;
+  border-radius: 2px;
+  color: @main-elements;
+  transition: all linear;
+
+  &:hover {
+    scale: 1.01;
+    .button-content {
+      font-weight: 600;
+    }
+    .icon-container {
+      font-size: 1.1rem;
+    }
+  }
+
+  a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .button-content {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: @Aboreto;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .arrow-icon {
+    rotate: -135deg;
+    font-size: 0.9rem;
+  }
+}

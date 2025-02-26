@@ -1,0 +1,56 @@
+@import url("./preset.less");
+
+.social-label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  width: fit-content;
+  cursor: pointer;
+
+  &:hover {
+    label {
+      font-weight: 600;
+    }
+    .cercle-social {
+      border-width: 3px;
+      font-weight: 600;
+    }
+  }
+
+  .cercle-social {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  label {
+    font-family: @Aboreto;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    cursor: pointer;
+  }
+}
+
+.to-top {
+  background-color: @main-elements;
+  color: @dark-main-elements;
+  border-radius: 25px;
+
+ 
+  label {
+    font-weight: 600;
+  }
+  .cercle-social {
+    background-color: @dark-main-elements;
+    border: none;
+
+
+    .icon-container {
+      color: @main-elements;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import url("./preset.less");
+
+.steps-card-container {
+  align-self: self-end;
+  background-color: @bg-dark-transparency;
+  border-radius: 2px;
+  border: 1px solid @border-main;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: self-start;
+  gap: 2rem;
+  width: 100%;
+  height: fit-content;
+  scale: 0.97;
+
+  animation: fade-in ease forwards;
+  animation-timeline: view();
+  animation-range: exit -200px;
+
+
+  button {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    align-self: flex-end;
+    border: 1px solid @border-main;
+    border-radius: 2px;
+    background-color:@bg-transparency ;
+    color: @main-elements;
+    text-transform: uppercase;
+    font-family: @Montserrat;
+    font-weight: @font-weight-400;
+    font-size: .9rem;
+  }
+
+  header{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+gap: .75rem;
+font-family: @Aboreto;
+font-weight: @font-weight-300;
+text-transform: uppercase;
+line-height: 1;
+letter-spacing: 0.07em;
+padding-inline: 1rem;
+
+h2{
+
+font-size: 1rem;
+font-weight: @font-weight-500;
+
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: @font-weight-500;
+
+}
+  }
+
+  p{
+    padding-inline: 1rem;
+    font-family: @Montserrat;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+  }
+
+  ul{
+    padding-inline: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:1rem;
+
+   li{
+    font-family: @Montserrat;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    animation: fade-out  linear ;
+    animation-range: exit -200px;
+    animation-timeline: view();
+   }
+    
+  }
+}

@@ -1,0 +1,156 @@
+@import url("./preset.less");
+
+.contact-feature-container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-inline: 10%;
+  gap: 2rem;
+  overflow: hidden;
+  align-items: center;
+
+  &::after {
+    grid-column: 7/10;
+    content: "";
+    background-image: url("@{base_url}decoration.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    position: absolute;
+    top: 0;
+    right: -45%;
+    width: 95%;
+    height: 100%;
+    z-index: 0;
+  }
+  .aside-left {
+    width: 40vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      grid-column: 3/10;
+      grid-row: 1/1;
+    }
+    .main-title {
+      grid-column: 1/4;
+      grid-row: 1/1;
+      width: 100%;
+      font-family: @Aboreto;
+      font-size: 6vw;
+      font-weight: 500;
+      line-height: 1.15;
+      text-align: start;
+      justify-content: end;
+    }
+  }
+  .contact-content-main {
+    width: 42vw;
+    height: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+
+    .contact-form-container {
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      .first-section {
+        width: 100%;
+        background-color: @bg-transparency;
+        backdrop-filter: blur(10px);
+        border: 1px solid @border-main;
+        border-radius: 2px;
+        padding: 2rem;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .contact-titles-section {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          gap: 0.5rem;
+
+          h1 {
+            font-family: @Aboreto;
+            font-size: 2.8rem;
+            line-height: 1.1;
+            font-weight: 500;
+            text-align: start;
+            letter-spacing: 0.07em;
+            width: 100%;
+          }
+          h2 {
+            width: 100%;
+            font-family: @Aboreto;
+            font-size: 0.9rem;
+            line-height: 1;
+            font-weight: 500;
+            text-align: start;
+          }
+        }
+      }
+      .buttons-section {
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-feature-container {
+    &::after {
+      right: -47%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-feature-container {
+    &::after {
+      right: -50%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-feature-container {
+    flex-direction: column;
+
+    &::after {
+      display: none;
+    }
+    .aside-left {
+      width: 70vw;
+    }
+
+    .contact-content-main {
+      width: 70vw;
+    }
+  }
+}

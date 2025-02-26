@@ -1,0 +1,33 @@
+@import url("./preset.less");
+
+.message-alert{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:.5rem;
+    font-family:@Montserrat;
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.15;
+    letter-spacing:.007em;
+    text-align:center;
+
+}
+
+.success-message{
+    color:@success-elements;
+}
+
+.warning-message{
+    color:@warning-elements;
+}
+
+.error-message{
+    color:@error-elements;
+}
+
+.disabled{
+    opacity: 50%;
+    cursor:not-allowed;
+}

@@ -1,0 +1,50 @@
+@import url("./preset.less");
+
+
+.contact-up-container{
+    width: 100%;
+    // background-color:@bg-transparency;
+    // border-radius:2px;
+    // border:1px solid @border-main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+
+    .contact-textarea{
+        width: 100%;
+        background-color:@bg-transparency;
+    border-radius:2px;
+    border:1px solid @border-main;
+    height: fit-content;
+    padding: 1rem;
+    outline: none;
+    color:@main-elements;
+    font-family:@Montserrat;
+    font-size: 1rem;
+    letter-spacing:0.07em;
+    text-transform:lowercase;
+
+    &::placeholder{
+        color:@main-elements;
+        opacity: .5;
+        font-family:@Aboreto;
+        
+    }
+
+    }
+
+    .contact-submit-button{
+        width: 100%;
+        font-weight:500;
+        letter-spacing:0.07em;
+        margin-block:.5rem;
+
+       &:hover, &:focus, &:active{
+          transform:scale(1);
+          font-weight:600;
+      
+        }
+    }
+}

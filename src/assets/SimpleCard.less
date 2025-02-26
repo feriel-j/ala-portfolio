@@ -1,0 +1,51 @@
+@import url("./preset.less");
+
+.simple-card-container {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+    background-color: @bg-dark-transparency;
+    border-radius: 2px;
+    border: 1px solid @border-main;
+
+    h1 {
+        width: 100%;
+        text-align: start;
+        font-family: @Aboreto;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 0.03em;
+        line-height: 1.5;
+    }
+
+    p {
+        font-family: @Montserrat;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: start;
+        width: 100%;
+        line-height: 1.75;
+    }
+    ul{
+        width: 100%;
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       
+        li{
+            font-family: @Montserrat;
+            font-size: .9rem;
+            font-weight: 300;
+            text-align: start;
+            width: 100%;
+            line-height: 1.75;  
+        }
+    }
+}

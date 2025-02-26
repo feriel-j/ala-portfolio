@@ -1,0 +1,129 @@
+@import url("./preset.less");
+
+.drowdown-menu-container {
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 1rem;
+
+  // padding: 1rem;
+
+  // .active-link{
+  //        transform: scale(1) !important;
+  //        background-color: @bg-main;
+  //        border-radius: 4px;
+  //        border:1px solid @border-main;
+  //        padding: 0.5rem 1rem;
+  //        transition: all .1s ease;
+
+  //     }
+
+  span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+    z-index: 1;
+
+    .icon-container {
+      font-size: 1.2rem;
+      rotate: 180deg;
+    }
+    .opened-arrow {
+      rotate: 0deg;
+      transition: rotate 0.25s ease;
+    }
+  }
+
+  .subitems-container {
+    min-width: 10rem;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    z-index: 10;
+    background-color: @bg-main;
+    border: 1px solid @border-main;
+
+    border-radius: 4px;
+    will-change: bottom;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    // animation: dropAnimation .1s backwards ;
+    transition: linear;
+    transition-duration: 0.25s;
+
+    & :first-child {
+      &:hover {
+        border-radius: 4px 4px 0 0;
+      }
+    }
+    & :last-child {
+      &:hover {
+        border-radius: 0 0 4px 4px;
+      }
+    }
+
+    li {
+      width: 100%;
+      padding: 1rem;
+      transition: all 0.1s linear;
+      color: @main-elements;
+      text-align: start;
+
+      &:hover {
+        background-color: @main-elements;
+        color: @bg-main;
+      }
+    }
+  }
+
+  .closed-subitems-container {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    opacity: 0;
+    li{
+       display: none;
+    }
+  }
+  .opened-subitems {
+    height: fit-content;
+    
+    opacity: 1;
+
+    
+  }
+}
+
+@keyframes dropAnimation {
+  0% {
+    opacity: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 45%);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 80%);
+  }
+  80% {
+    opacity: 0.8;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 45%);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+  }
+}
