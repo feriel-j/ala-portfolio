@@ -336,6 +336,7 @@
   width: 100%;
   grid-column: 3/10;
   grid-row: 1/1;
+  z-index: 0;
 }
 .contact-feature-container .aside-left .main-title {
   grid-column: 1/4;
@@ -347,6 +348,7 @@
   line-height: 1.15;
   text-align: start;
   justify-content: end;
+  z-index: 1;
 }
 .contact-feature-container .contact-content-main {
   width: 42vw;

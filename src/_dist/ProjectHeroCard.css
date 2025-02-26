@@ -318,10 +318,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 22px;
+  border-radius: 2vw;
 }
 .project-hero-card-container figure img {
   width: 100%;
-  border-radius: 22px;
+  border-radius: 2vw;
   opacity: 1;
 }
