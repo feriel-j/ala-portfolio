@@ -27,4 +27,4 @@ yarn-error.log*
 .env
 
 # Exluding _dist file
-src/_dist
+# src/_dist
