@@ -14,38 +14,35 @@ const UxComponent = () => {
   const TopRef = useRef<HTMLElement>(null);
   const myTopRef = useContext(refContext);
 
-
   return (
     <section ref={TopRef} className="ui-component-container ">
       <ProjectHeroCard imgurl={"./images/luxBLACK.svg"} imgtitle={"luxblack"} />
       <DigitalFoundationContainer className="ux-page">
-        <DigitalFoundationComponent className="ux-df-component"
+        <DigitalFoundationComponent
+          className="ux-df-component"
           projectname={"LuxBlack"}
           extratitle="Web &Mobile">
           <SimpleCard cardtitle="Challenge">
             <p>
-              The company wanted a mobile app to make bookings faster and more
-              efficient while catering to both tech-savvy users and those less
-              comfortable with technology.
+              The company wanted a website and a mobile app to make bookings
+              faster and more efficient while catering to both tech-savvy users
+              and those less comfortable with technology
             </p>
           </SimpleCard>
           <SimpleCard cardtitle="Goal">
             <p>
               The goal was to design a user-friendly web & mobile app for
-              LuxBlack, a transportation company, to streamline the process of
-              booking rides. The app needed to prioritize simplicity,
+              LuxBlack, a luxurious transportation company, to streamline the
+              process of booking rides. The app needed to prioritize simplicity,
               efficiency, and accessibility for a wide range of users.
             </p>
           </SimpleCard>
           <SimpleCard cardtitle="Result">
             <p>
               Our team developed a custom website design that was not only
-              visually stunning but also user-friendly and optimized for search
-              engines. The client's website now showcases their products and
-              services in a professional and engaging manner, and has seen a
-              significant increase in organic traffic and customer engagement.
-              The client is thrilled with the final result and has received
-              positive feedback from their customers.
+              visually stunning but also user-friendly. The client is thrilled
+              with the final result and has received positive feedback from
+              their potential customers.
             </p>
           </SimpleCard>
         </DigitalFoundationComponent>
@@ -53,64 +50,98 @@ const UxComponent = () => {
         <div className="digital-process-container">
           <div className="left-section">
             <SimpleCard cardtitle="Research Process">
-              <p>Methods:</p>
+              <p>Approach:</p>
               <ul>
                 <li>
-                Conducted a competitor analysis of similar-sized construction companies to identify best practices.
+                Analyzed competitors' apps to identify strengths and weaknesses.
                 </li>
                 <li>
-                Interviewed 4 potential clients to understand what they look for on a construction company’s website.
+                Created user personas based on finding
                 </li>
+                <li>frequent travelers, and working professionals.</li>
               </ul>
               <p>Key Insights:</p>
               <ul>
                 <li>
-                Users expect clear service descriptions and project portfolios.
+                Users valued a quick, 3-step booking process.
                 </li>
-                <li>A simple and professional design builds trust.</li>
-                <li>
-                  Easy access to contact information is crucial for inquiries.
-                </li>
+                <li>Many wanted real-time ride tracking and clear pricing before confirming.</li>
+               
               </ul>
             </SimpleCard>
             <SimpleCard cardtitle="Ideation and Planning">
-              <p>Goals:</p>
+              <p>User Flow:</p>
+              <p>Designed a straightforward 3-step booking process:</p>
               <ul>
                 <li>
-                  Create a modern, professional design that reflects the
-                  company’s values.
+                Select a pick-up and drop-off location.
                 </li>
                 <li>
-                  Highlight key services, portfolio, and contact information
-                  prominently.
+                View ride options and prices.
                 </li>
+                <li>Confirm booking and receive real-time updates.</li>
               </ul>
               <p>Wireframe Highlights:</p>
+              <p>Created hi-fi wireframes focusing on simplicity and accessibility:</p>
               <ul>
                 <li>
-                  Homepage: Hero section with a strong tagline, featured
-                  services, and a CTA.
+                Homepage with a “Embarquer” button.
                 </li>
-                <li>About Page: Company mission, and values.</li>
+                <li>Real-time tracking page</li>
+                
+               
+              </ul>
+            </SimpleCard>
+            <SimpleCard cardtitle="Design Execution">
+              <p>Key Features:</p>
+              <ul>
                 <li>
-                  Portfolio Page: Showcase of completed projects with
-                  high-quality images.
+                Color Palette: Black and bright orangey-yellow tone shade for gold.
                 </li>
                 <li>
-                  Contact Page: Simple form and clickable contact details
-                  (phone/email).
+                Typography: Clean sans-serif font for readability, with larger sizes for key actions.
                 </li>
+                <li>Icons: Universal symbols for navigation and actions.</li>
               </ul>
             </SimpleCard>
           </div>
           <figure>
             {" "}
-            <img src="./images/luxblack-grid.svg" alt="bmes" />
+            <img src="./images/luxblack-grid-1.svg" alt="bmes" />
           </figure>
         </div>
       </DigitalFoundationContainer>{" "}
       <ProjectFigure imgurl={"./images/laptop-2.svg"} imgtitle={"LUXBLACK"} />
       <ToolsComponent />
+      {/* <DigitalFoundationComponent
+          className="ux-df-component"
+          projectname={"LuxBlack"}
+          extratitle="Web &Mobile">
+          <SimpleCard cardtitle="What Went Well">
+            <p>
+              The company wanted a website and a mobile app to make bookings
+              faster and more efficient while catering to both tech-savvy users
+              and those less comfortable with technology
+            </p>
+          </SimpleCard>
+          <SimpleCard cardtitle="Goal">
+            <p>
+              The goal was to design a user-friendly web & mobile app for
+              LuxBlack, a luxurious transportation company, to streamline the
+              process of booking rides. The app needed to prioritize simplicity,
+              efficiency, and accessibility for a wide range of users.
+            </p>
+          </SimpleCard>
+          <SimpleCard cardtitle="Result">
+            <p>
+              Our team developed a custom website design that was not only
+              visually stunning but also user-friendly. The client is thrilled
+              with the final result and has received positive feedback from
+              their potential customers.
+            </p>
+          </SimpleCard>
+        </DigitalFoundationComponent> */}
+
       <ExecuteScrollComponent scrollRef={myTopRef} />
     </section>
   );

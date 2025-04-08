@@ -39,16 +39,16 @@ const FooterComponent = () => {
         <div className="social-media">
           <h1>Aladdin</h1>
           <div className="social-content">
-            <a href="https://www.instagram.com/meraki_artstn/?hl=fr" target="_blank" rel="noreferrer" >
+            <a href="https://www.instagram.com/ala_bahri/" target="_blank" rel="noreferrer" >
               <SocialLabel icon={<InstagramIcon />}>Instagram</SocialLabel>
             </a>
             {/* <a href="" target="_blank" rel="noreferrer">
               <SocialLabel icon={<TwitterIcon />}>Twitter</SocialLabel>
             </a> */}
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://dribbble.com/AladdinB" target="_blank" rel="noreferrer">
               <SocialLabel icon={<DribbleIcon />}>Dribbble</SocialLabel>
             </a>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://www.behance.net/alabahri" target="_blank" rel="noreferrer">
               <SocialLabel icon={<EnhaceIcon />}>Behance</SocialLabel>
             </a>
           </div>

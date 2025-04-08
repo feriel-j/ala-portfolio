@@ -8,7 +8,7 @@ import StepCercle from './StepCercle'
 import ProjectsComponents from './ProjectsComponents'
 import Divider from './Divider'
 import ProjectCard from './ProjectCard'
-import BrandsCard from './BrandsCard'
+// import BrandsCard from './BrandsCard'
 import { useNavigate } from 'react-router-dom'
 import { refWorkContext } from '../domains/alaFP/layouts/MainLayout'
 const ProcessComponent = () => {
@@ -118,9 +118,9 @@ const ProcessComponent = () => {
       <ProjectCard onClick={()=>navigate("/ui")} imageurl={"./images/bmes.svg"} title="bmes"/>
       <ProjectCard onClick={()=>navigate("/ux")} imageurl={"./images/luxBLACK.svg"} title="LuxBLACK" /></ProjectsComponents>
       <Divider/>
-      <BigTitles  secondary="Turning ideas into visuals that speak volumes.">My Graphic</BigTitles>
+      {/* <BigTitles  secondary="Turning ideas into visuals that speak volumes.">My Graphic</BigTitles> */}
 
-      <StepsComponent>
+      {/* <StepsComponent>
       <main className="main-content">
         <StepsCard
           className="card-1"
@@ -215,13 +215,13 @@ const ProcessComponent = () => {
           </ul>
         </StepsCard>
     </main>
-      </StepsComponent>
-      <ProjectsComponents className='graphic-projects' title="GRAPHIC DESIGN PROJECTS">
+      </StepsComponent> */}
+      {/* <ProjectsComponents className='graphic-projects' title="GRAPHIC DESIGN PROJECTS">
         <BrandsCard title="meraki" imageurl="./images/meraki.svg" />
         <BrandsCard title="craftura" imageurl="./images/craftura.svg" />
         <BrandsCard title="arabic" imageurl="./images/arabic.svg" />
       </ProjectsComponents>
-      <Divider/>
+      <Divider/> */}
     </div>
   )
 }

@@ -34,14 +34,18 @@ const ServicesComponent = () => {
         header="Photography">
         Photography and Image Manipulation, Photo Editing...
       </ServiceCard>
-      <div className="first-design"></div>
+      <div className="first-design"><img src="images/firstd.svg" alt="design" /></div>
       <div className="second-design"></div>
-      <div className="third-design"></div>
+      <div className="third-design"><img src="images/second.svg" alt="design" /></div>
 
       <div className="fourth-design"></div>
 
-      <div className="fifth-design"></div>
-      <div className="sixth-design"></div>
+      <div className="fifth-design"><img src="images/second.svg" alt="design" /></div>
+      <div className="sixth-design"><img src="images/firstd.svg" alt="design" /></div>
+      <div className=" cd1"> <div className="circle-d"></div></div>
+      <div className="cd2"><div className="circle-d"> </div></div>
+      <div className="cd3"><div className="circle-d"></div></div>
+      <div className="cd4"><div className="circle-d"></div></div>
 
 
 
