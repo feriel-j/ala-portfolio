@@ -6,6 +6,7 @@ interface DigitalFoundationComponentProps
   id?: string;
   projectname: string;
   extratitle?: string;
+  type?:string;
 }
 
 const DigitalFoundationComponent = ({
@@ -17,7 +18,19 @@ const DigitalFoundationComponent = ({
       className={`digital-fondation-container ${
         props.className ? props.className : ""
       }`}>
-      <div className="titles-section">
+     {props.type==="reflexion"?  <div className="titles-section">
+       
+        <h2>
+        REFLECTION
+        </h2>
+        {props.projectname === "LuxBlack" && (
+          <figure>
+            {" "}
+            <img src="./images/luxblack-mobile.svg" alt="luxblack mobile" />
+          </figure>
+        )}
+      </div>
+     : <div className="titles-section">
         <h4>About</h4>
         <h2>
           Building a Digital Foundation – Website Design for {props.projectname}
@@ -29,7 +42,7 @@ const DigitalFoundationComponent = ({
             <img src="./images/luxblack-mobile.svg" alt="luxblack mobile" />
           </figure>
         )}
-      </div>
+      </div>}
       <div className="cards-container">{props.children}</div>
     </section>
   );

@@ -306,3 +306,6 @@
   flex-direction: column;
   gap: 8rem;
 }
+.ui-component-container .image-final {
+  width: 118%;
+}
