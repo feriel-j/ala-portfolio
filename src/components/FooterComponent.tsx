@@ -11,9 +11,15 @@ import EnhaceIcon from "./icons/EnhaceIcon";
 import { useScrollToTop } from "../utils/HandleScrollToTop";
 import { refContext } from "../domains/alaFP/layouts/MainLayout";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, } from "react";
 
 const FooterComponent = () => {
+
+
+
+
+  
+
   //useScroll to top
   const scrollToTop = useScrollToTop();
   const navigate = useNavigate();
@@ -56,7 +62,7 @@ const FooterComponent = () => {
         <div className="copyright">
           <p>©aladdin all rights reserved 2025.</p>
           <SocialLabel
-            className="to-top"
+            className= {`to-top `}
             icon={<ArrowDownIcon />}
             onClick={() => scrollToTop(myTopRef)}>
             To Top

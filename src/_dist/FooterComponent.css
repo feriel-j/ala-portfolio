@@ -383,3 +383,9 @@
 .footer-component-container .copyright .to-top .icon-container {
   transform: rotate(180deg);
 }
+.footer-component-container .copyright .hide {
+  opacity: 0;
+}
+.footer-component-container .copyright .show {
+  opacity: 1;
+}
