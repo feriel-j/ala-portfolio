@@ -312,6 +312,10 @@
   border: 1px solid rgba(218, 197, 167, 0.15);
   height: fit-content;
 }
+.navigation-bar:focus {
+  outline: none;
+  border: 3px solid rgba(218, 197, 167, 0.15);
+}
 .navigation-bar h1 {
   font: 500 1.7rem "Housttely Signature";
   line-height: 0.5;
@@ -320,6 +324,10 @@
   align-items: center;
   height: fit-content;
   cursor: pointer;
+}
+.navigation-bar h1:focus {
+  outline: none;
+  font-weight: 700;
 }
 .navigation-bar ul {
   display: flex;

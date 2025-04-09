@@ -7,6 +7,7 @@
     // border-radius:2px;
     // border:1px solid @border-main;
     display: flex;
+    outline: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -31,6 +32,9 @@
         opacity: .5;
         font-family:@Aboreto;
         
+    }
+    &:focus{
+        border: 3px solid @border-main;
     }
 
     }

@@ -313,6 +313,9 @@
   border-width: 3px;
   font-weight: 600;
 }
+.social-label-container:focus {
+  outline: none;
+}
 .social-label-container .cercle-social {
   width: 2rem;
   height: 2rem;
@@ -332,6 +335,9 @@
   background-color: #DAC5A7;
   color: #181715;
   border-radius: 25px;
+}
+.to-top:focus {
+  outline: 3px solid rgba(218, 197, 167, 0.15);
 }
 .to-top label {
   font-weight: 600;

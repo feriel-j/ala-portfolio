@@ -7,11 +7,11 @@ interface SocialLabelProps extends HTMLProps<HTMLDivElement> {
    
   }
 
-const SocialLabel = ({...props}: SocialLabelProps) => {
+const SocialLabel = ({ className, icon, children, ...rest }: SocialLabelProps) => {
   return (
-    <div {...props} className={`social-label-container ${props.className?props.className:""}`}>
-        <StepCercle className='cercle-social'>{props.icon}</StepCercle>
-        <label >{props.children}</label>
+    <div {...rest} className={`social-label-container ${className?className:""}`}>
+        <StepCercle className='cercle-social'>{icon}</StepCercle>
+        <label >{children}</label>
     </div>
   )
 }

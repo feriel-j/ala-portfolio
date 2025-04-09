@@ -313,13 +313,16 @@
   color: #DAC5A7;
   transition: all linear;
 }
-.button-contact-container:hover {
+.button-contact-container:hover,
+.button-contact-container:focus {
   scale: 1.01;
 }
-.button-contact-container:hover .button-content {
+.button-contact-container:hover .button-content,
+.button-contact-container:focus .button-content {
   font-weight: 600;
 }
-.button-contact-container:hover .icon-container {
+.button-contact-container:hover .icon-container,
+.button-contact-container:focus .icon-container {
   font-size: 1.1rem;
 }
 .button-contact-container a {
@@ -328,6 +331,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+.button-contact-container a:focus {
+  outline: none;
 }
 .button-contact-container .button-content {
   width: fit-content;

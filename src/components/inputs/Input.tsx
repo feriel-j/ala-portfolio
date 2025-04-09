@@ -7,7 +7,7 @@ interface InputProps extends React.AllHTMLAttributes<HTMLInputElement> {
 const Input = ({...props}: InputProps) => {
   return (
 
-      <input
+      <input tabIndex={0}
         {...props}
         className={
           props.className

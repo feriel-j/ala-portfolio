@@ -50,10 +50,10 @@ const DropDownMenu = ({handleClickNav,...props}: DropDownMenuProps) => {
         {props.children} <EsdCompArrowIcon className={Opened ?"opened-arrow":""}/>
       </span>
      
-        <ul tabIndex={0}  className={Opened?"subitems-container opened-subitems" :"subitems-container closed-subitems-container"} onClick={(e)=>e.stopPropagation()} onMouseOver={(e)=>e.stopPropagation()} onMouseLeave={()=>setOpened(false)} >
-          <li tabIndex={0} onClick={()=>handleClickNav(myWorkRef)}>Projects List</li>
-          <li tabIndex={0} onClick={()=>navigate("/ui")}>Bmes</li>
-          <li tabIndex={0} onClick={()=>navigate("/ux")}>luxblack</li>
+        <ul tabIndex={0}  className={Opened?"subitems-container opened-subitems" :"subitems-container closed-subitems-container"} onClick={(e)=>e.stopPropagation()} onMouseOver={(e)=>e.stopPropagation()} onMouseLeave={()=>setOpened(false)} onKeyDown={(e)=>e.stopPropagation()} >
+          <li tabIndex={0} onClick={()=>handleClickNav(myWorkRef)} onKeyDown={()=>handleClickNav(myWorkRef)}>Projects List</li>
+          <li tabIndex={0} onClick={()=>navigate("/ui")} onKeyDown={()=>navigate("/ui")}>Bmes</li>
+          <li tabIndex={0} onClick={()=>navigate("/ux")} onKeyDown={()=>navigate("/ux")}>luxblack</li>
         </ul>
       
     </li>

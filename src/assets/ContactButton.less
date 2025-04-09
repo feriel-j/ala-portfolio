@@ -15,7 +15,7 @@
   color: @main-elements;
   transition: all linear;
 
-  &:hover {
+  &:hover, &:focus {
     scale: 1.01;
     .button-content {
       font-weight: 600;
@@ -25,12 +25,19 @@
     }
   }
 
+  
+
   a {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+
+    &:focus{
+      outline: none;
+     
+    }
   }
   .button-content {
     width: fit-content;

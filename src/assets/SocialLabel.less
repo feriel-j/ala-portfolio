@@ -17,6 +17,9 @@
       font-weight: 600;
     }
   }
+  &:focus{
+    outline: none;
+  }
 
   .cercle-social {
     width: 2rem;
@@ -32,6 +35,10 @@
     letter-spacing: 0.1em;
     font-weight: 300;
     cursor: pointer;
+
+    &:focus{
+      // outline: none;
+    }
   }
 }
 
@@ -40,9 +47,15 @@
   color: @dark-main-elements;
   border-radius: 25px;
 
+  &:focus{
+    outline:3px solid @border-main
+  }
+ 
+
  
   label {
     font-weight: 600;
+   
   }
   .cercle-social {
     background-color: @dark-main-elements;

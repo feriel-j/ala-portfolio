@@ -76,9 +76,9 @@ const ContactFeature = () => {
             <ContactUs />
           </div>
           <div className="buttons-section">
-            <ContactButton icon={<InstagramIcon/>} linkurl="https://www.instagram.com/meraki_artstn/?hl=fr"> Instagram</ContactButton>
-            <ContactButton icon={<EnhaceIcon />} linkurl={"string"}>Behance</ContactButton>
-            <ContactButton icon={<DribbleIcon />} linkurl={"string"}>Dribbble</ContactButton>
+            <ContactButton icon={<InstagramIcon/>} linkurl="https://www.instagram.com/ala_bahri/"> Instagram</ContactButton>
+            <ContactButton icon={<EnhaceIcon />} linkurl={"https://www.behance.net/alabahri"}>Behance</ContactButton>
+            <ContactButton icon={<DribbleIcon />} linkurl={"https://dribbble.com/AladdinB"}>Dribbble</ContactButton>
 
 
           </div>

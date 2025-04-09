@@ -11,15 +11,9 @@ import EnhaceIcon from "./icons/EnhaceIcon";
 import { useScrollToTop } from "../utils/HandleScrollToTop";
 import { refContext } from "../domains/alaFP/layouts/MainLayout";
 import { useNavigate } from "react-router-dom";
-import { useContext, } from "react";
+import { useContext } from "react";
 
 const FooterComponent = () => {
-
-
-
-
-  
-
   //useScroll to top
   const scrollToTop = useScrollToTop();
   const navigate = useNavigate();
@@ -45,25 +39,39 @@ const FooterComponent = () => {
         <div className="social-media">
           <h1>Aladdin</h1>
           <div className="social-content">
-            <a href="https://www.instagram.com/ala_bahri/" target="_blank" rel="noreferrer" >
+            <a
+              href="https://www.instagram.com/ala_bahri/"
+              target="_blank"
+              rel="noreferrer">
               <SocialLabel icon={<InstagramIcon />}>Instagram</SocialLabel>
             </a>
             {/* <a href="" target="_blank" rel="noreferrer">
               <SocialLabel icon={<TwitterIcon />}>Twitter</SocialLabel>
             </a> */}
-            <a href="https://dribbble.com/AladdinB" target="_blank" rel="noreferrer">
+            <a
+              href="https://dribbble.com/AladdinB"
+              target="_blank"
+              rel="noreferrer">
               <SocialLabel icon={<DribbleIcon />}>Dribbble</SocialLabel>
             </a>
-            <a href="https://www.behance.net/alabahri" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.behance.net/alabahri"
+              target="_blank"
+              rel="noreferrer">
               <SocialLabel icon={<EnhaceIcon />}>Behance</SocialLabel>
             </a>
           </div>
         </div>
-        <div className="copyright">
+        <div className="copyright" >
           <p>©aladdin all rights reserved 2025.</p>
           <SocialLabel
-            className= {`to-top `}
+            className={`to-top `}
             icon={<ArrowDownIcon />}
+            tabIndex={0}
+            role="button"
+            onKeyDown={(e) => {
+              if (e.key === "Enter") scrollToTop(myTopRef);
+            }}
             onClick={() => scrollToTop(myTopRef)}>
             To Top
           </SocialLabel>
