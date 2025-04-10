@@ -90,7 +90,7 @@ const NavigationBar = () => {
     <nav tabIndex={0} id="navigation-bar" className="navigation-bar">
       <h1 tabIndex={0} role="button" onKeyDown={(e) => {
       if (e.key === "Enter")navigate("/") ;
-    }} onClick={() => navigate("/")}>Aladdin</h1>
+    }} onClick={() => navigate("/")} onTouchStart={() => navigate("/")}>Aladdin</h1>
       <ul>
       {Items.map((item:Item, index) => (
         <React.Fragment key={index}>
@@ -99,8 +99,7 @@ const NavigationBar = () => {
               tabIndex={0}
               ref={(el) => (listRef.current[index] = el)}
               onKeyDown={(e) => handleKeyboard(e, item.ref, index, listRef.current)}
-              onClick={() => handleClick(item.ref)}
-              // className={`${isUi || isUx ? 'active-link' : ''}`}
+              onClick={() => handleClick(item.ref)} onTouchStart={() => handleClick(item.ref)}
             >
               {item.name}
             </li>

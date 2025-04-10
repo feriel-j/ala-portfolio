@@ -335,7 +335,7 @@
   border-radius: 4px;
   will-change: bottom;
   display: flex;
-  gap: 0;
+  gap: 0.5rem;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -354,6 +354,7 @@
   transition: all 0.1s linear;
   color: #DAC5A7;
   text-align: start;
+  z-index: 5;
 }
 .drowdown-menu-container .subitems-container li:hover {
   background-color: #DAC5A7;
