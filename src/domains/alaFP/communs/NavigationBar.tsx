@@ -100,7 +100,7 @@ const NavigationBar = () => {
               ref={(el) => (listRef.current[index] = el)}
               onKeyDown={(e) => handleKeyboard(e, item.ref, index, listRef.current)}
               onClick={() => handleClick(item.ref)}
-              className={`${isUi || isUx ? 'active-link' : ''}`}
+              // className={`${isUi || isUx ? 'active-link' : ''}`}
             >
               {item.name}
             </li>
