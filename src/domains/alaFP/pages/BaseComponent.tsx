@@ -21,7 +21,7 @@ const BaseComponent = () => {
   return (
     <section ref={TopRef} className="base-component-container">
       <HeroCard />
-      <DefaultSection id="myAboutRef" ref={myAboutRef}   title="BRIEF INTRO">
+      <DefaultSection   title="BRIEF INTRO">
         <IntroComponent />
       </DefaultSection>
       <DefaultSection  title="WHAT I DO">
@@ -33,8 +33,8 @@ const BaseComponent = () => {
       <DefaultSection id="myTestimonialsRef" ref={myTestimonialsRef} title="CONFESSIONS">
         <TestimonialsComponent />
       </DefaultSection>
-      <DefaultSection title="ABOUT ME">
-        <AboutComponent />
+      <DefaultSection title="ABOUT ME" id="myAboutRef" ref={myAboutRef}>
+        <AboutComponent   />
       </DefaultSection>
       <ExecuteScrollComponent scrollRef={myTopRef} />
 
