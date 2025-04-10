@@ -339,7 +339,6 @@
 }
 .navigation-bar ul .active-link {
   font-weight: 700;
-  transform: scale(1.2);
 }
 .navigation-bar ul li {
   width: max-content;
